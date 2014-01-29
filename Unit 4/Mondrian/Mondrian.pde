@@ -9,12 +9,13 @@ void setup() {
   size(500, 500);
   strokeWeight(5);
   xRandom= random(50, width-50);
-  yRandom= random(050, height-50);
+  yRandom= random(50, height-50);
   newWidth= xRandom;
   newHeight= yRandom;
   newX= random(50, newWidth);
   newY= random(50, newHeight);
   drawRect();
+  drawNewRect();
 }
 
 
@@ -27,7 +28,6 @@ void drawRect() {
   rect(0, yRandom, xRandom, height-yRandom);
   fill(255, 255, 255);
   rect(xRandom, yRandom, width-xRandom, height-yRandom);
-  drawNewRect();
 }
 
 void drawNewRect() {
@@ -39,7 +39,4 @@ void drawNewRect() {
   rect(0, newY, newX, newHeight-newY);
   fill(255, 255, 0);
   rect(newX, newY, newWidth-newX, newHeight-newY);
-  if(newWidth>50){
-    drawNewRect();
-  }
 }
