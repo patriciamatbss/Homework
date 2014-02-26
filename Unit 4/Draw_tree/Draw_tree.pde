@@ -31,12 +31,12 @@ void drawTree(int depth, int thicknes, float endOfBase, int leafHeight, int leaf
       line(0, 0, endOfBase, 0);
       if (depth<2) {
         noStroke();
-        fill(0, 255, 0);
+        fill(0, 153, 0);
         ellipse(endOfBase+25, 0, 50, 25);
       }
       if (depth<4) {
         noStroke();
-        fill(0, 255, 0);
+        fill(0, 153, 0);
         ellipse(0-endOfBase+25, 0, 50, 25);
       }
       popMatrix();
@@ -54,7 +54,7 @@ void drawTree(int depth, int thicknes, float endOfBase, int leafHeight, int leaf
     line(0, 0, endOfBase, 0);
     if (depth<2) {
       noStroke();
-      fill(0, 255, 0);
+      fill(0, 153, 0);
       ellipse(endOfBase+25, 0, 50, 25);
     }
     translate(endOfBase, 0);
@@ -92,7 +92,7 @@ void drawTree(int depth, int thicknes, float endOfBase, int leafHeight, int leaf
     line(0, 0, endOfBase, 0);
     if (depth<2) {
       noStroke();
-      fill(0, 255, 0);
+      fill(0, 153, 0);
       ellipse(endOfBase+25, 0, 50, 25);
     }
     translate(endOfBase, 0);
